@@ -1,0 +1,18 @@
+services:
+  rtorrent:
+    container_name: rtorrent
+    environment:
+      - PGID=${PGID}
+      - PUID=${PUID}
+      - TZ=${TZ}
+      - RUTORRENT_PORT=80
+    logging:
+      driver: json-file
+      options:
+        max-file: ${DOCKERLOGGING_MAXFILE}
+        max-size: ${DOCKERLOGGING_MAXSIZE}
+    restart: ${RTORRENT_RESTART}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${DOCKERCONFDIR}/rtorrent:/data
+      - ${DOCKERSTORAGEDIR}:/storage

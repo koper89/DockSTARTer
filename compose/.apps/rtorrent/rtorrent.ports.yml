@@ -1,0 +1,8 @@
+services:
+  rtorrent:
+    ports:
+      - ${RTORRENT_PORT_XMLRPC}:8000
+      - ${RTORRENT_PORT_RT_DHT}:6881
+      - ${RTORRENT_PORT_RUTORRENT}:80
+      - ${RTORRENT_PORT_WEBDAV}:9000
+      - ${RTORRENT_PORT_RT_INC}:50000

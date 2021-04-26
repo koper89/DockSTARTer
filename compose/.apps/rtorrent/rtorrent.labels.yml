@@ -1,0 +1,14 @@
+services:
+  rtorrent:
+    labels:
+      com.dockstarter.appinfo.deprecated: "false"
+      com.dockstarter.appinfo.description: rTorrent client with ruTorrent WebUI
+      com.dockstarter.appinfo.nicename: rTorrent
+      com.dockstarter.appvars.rtorrent_enabled: "false"
+      com.dockstarter.appvars.rtorrent_network_mode: ""
+      com.dockstarter.appvars.rtorrent_port_xmlrpc: "8000"
+      com.dockstarter.appvars.rtorrent_port_rt_dht: "6881"
+      com.dockstarter.appvars.rtorrent_port_rt_inc: "50000"
+      com.dockstarter.appvars.rtorrent_port_rutorrent: "8080"
+      com.dockstarter.appvars.rtorrent_port_webdav: "9000"
+      com.dockstarter.appvars.rtorrent_restart: unless-stopped

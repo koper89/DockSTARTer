@@ -1,0 +1,3 @@
+services:
+  rtorrent:
+    network_mode: ${RTORRENT_NETWORK_MODE}
